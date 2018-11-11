@@ -1,0 +1,14 @@
+{
+  "name": "currencyinfo",
+  "version": "0.1.0",
+  "description": "Information about the world's currency in JSON format. Fetched from Wikipedia articles.",
+  "main": "index.js",
+  "repository": "git@gitlab.com:wesleye/currencyinfo.git",
+  "author": "Wesley Elfring <wesleyelfring@gmail.com>",
+  "license": "CC-BY-SA-3.0",
+  "private": false,
+  "devDependencies": {
+    "crawler": "^1.2.0",
+    "showdown": "^1.8.7"
+  }
+}
