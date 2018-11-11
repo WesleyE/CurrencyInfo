@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p><link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"></p>
+<h1 id="currencyinfo">CurrencyInfo</h1>
+<p>Information about the world's currencies. Fetched from Wikipedia pages.</p>
+<p><strong>Contents of this dataset</strong></p>
+<blockquote>
+  <p>For the purposes of this list, only currencies that are legal tender, including those used in actual commerce or issued for commemorative purposes, are considered "circulating currencies". This includes fractional units that have no physical form but are recognized by the issuing state, such as the United States mill, the Egyptian millime, and the Japanese rin. Currencies used by non-state entities, like the Sovereign Military Order of Malta, scrips used by private entities, and other private, virtual, and alternative currencies are not under the purview of this list.</p>
+</blockquote>
+<p><em>Exerpt from Wikipedia.</em></p>
+<h2 id="downloads">Downloads</h2>
+<p>Check <a href="https://wesleye.gitlab.io/currencyinfo/">the Gitlab Pages</a> for the downloadable files.</p>
+<ul>
+<li><a href="./public/currencies.min.json">Minified Data</a></li>
+<li><a href="./public/currencies.json">Pretty Data</a></li>
+<li><a href="./public/urls.json">Crawled URLS</a></li>
+</ul>
+<h2 id="data">Data</h2>
+<h3 id="peculiaritiesinthedata">Peculiarities in the data</h3>
+<ul>
+<li>Some currencies do not make a distinction in the frequently / infrequently designation. Those denominations are listed in this dataset as frequently</li>
+<li>Zimbabwe has bond coins without a 'real' name, resulting in the row with all (none)'s</li>
+</ul>
+<h3 id="exampledata">Example Data</h3>
+<pre><code>  "RUB": {
+    "name": "Russian ruble",
+    "symbols": [
+      "₽"
+    ],
+    "iso": "RUB",
+    "countries": [
+      "Ukraine"
+    ],
+    "fractionalUnit": "Kopek",
+    "numberToBasic": "100",
+    "banknotes": {
+      "rarely": [
+        "5",
+        "10"
+      ],
+      "frequently": [
+        "50",
+        "100",
+        "200",
+        "500",
+        "1,000",
+        "2,000",
+        "5,000"
+      ]
+    },
+    "coins": {
+      "rarely": [
+        "1",
+        "5",
+        "10",
+        "50"
+      ],
+      "frequently": [
+        "1",
+        "2",
+        "5",
+        "10"
+      ]
+    }
+  },
+</code></pre>
+<h2 id="wikipedialicense">Wikipedia &amp; License</h2>
+<h3 id="changestodata">Changes to data</h3>
+<p>The text has been changed to fit a JSON machine-readable format. Currency denominations have been altered and stripped of their symbols.</p>
+<h3 id="license">License</h3>
+<p>The Creative Commons Attribution-Share-Alike License 3.0 is used.</p>
+<h3 id="crawledurls">Crawled URLS</h3>
+<p>Last crawl date: <em>Sunday, Nov 11, 2018, 10:37 PM</em></p>
+<pre><code>- https://en.wikipedia.org/wiki/List_of_circulating_currencies
+- https://en.wikipedia.org//wiki/Abkhazian_apsar
+- https://en.wikipedia.org//wiki/Russian_ruble
+- https://en.wikipedia.org//wiki/Afghan_afghani
+- https://en.wikipedia.org//wiki/Euro
+- https://en.wikipedia.org//wiki/Albanian_lek
+- https://en.wikipedia.org//wiki/Alderney_pound
+- https://en.wikipedia.org//wiki/Pound_sterling
+- https://en.wikipedia.org//wiki/Guernsey_pound
+- https://en.wikipedia.org//wiki/Algerian_dinar
+- https://en.wikipedia.org//wiki/Angolan_kwanza
+- https://en.wikipedia.org//wiki/Eastern_Caribbean_dollar
+- https://en.wikipedia.org//wiki/Argentine_peso
+- https://en.wikipedia.org//wiki/Armenian_dram
+- https://en.wikipedia.org//wiki/Artsakh_dram
+- https://en.wikipedia.org//wiki/Aruban_florin
+- https://en.wikipedia.org//wiki/Saint_Helena_pound
+- https://en.wikipedia.org//wiki/Australian_dollar
+- https://en.wikipedia.org//wiki/Azerbaijani_manat
+- https://en.wikipedia.org//wiki/Bahamian_dollar
+- https://en.wikipedia.org//wiki/Bahraini_dinar
+- https://en.wikipedia.org//wiki/Bangladeshi_taka
+- https://en.wikipedia.org//wiki/Barbadian_dollar
+- https://en.wikipedia.org//wiki/Belarusian_ruble
+- https://en.wikipedia.org//wiki/Belize_dollar
+- https://en.wikipedia.org//wiki/West_African_CFA_franc
+- https://en.wikipedia.org//wiki/Bermudian_dollar
+- https://en.wikipedia.org//wiki/Bhutanese_ngultrum
+- https://en.wikipedia.org//wiki/Indian_rupee
+- https://en.wikipedia.org//wiki/Bolivian_boliviano
+- https://en.wikipedia.org//wiki/United_States_dollar
+- https://en.wikipedia.org//wiki/Bosnia_and_Herzegovina_convertible_mark
+- https://en.wikipedia.org//wiki/Botswana_pula
+- https://en.wikipedia.org//wiki/Brazilian_real
+- https://en.wikipedia.org//wiki/Brunei_dollar
+- https://en.wikipedia.org//wiki/Singapore_dollar
+- https://en.wikipedia.org//wiki/Bulgarian_lev
+- https://en.wikipedia.org//wiki/Burundian_franc
+- https://en.wikipedia.org//wiki/Cambodian_riel
+- https://en.wikipedia.org//wiki/Central_African_CFA_franc
+- https://en.wikipedia.org//wiki/Canadian_dollar
+- https://en.wikipedia.org//wiki/Cape_Verdean_escudo
+- https://en.wikipedia.org//wiki/Cayman_Islands_dollar
+- https://en.wikipedia.org//wiki/Chilean_peso
+- https://en.wikipedia.org//wiki/Renminbi
+- https://en.wikipedia.org//wiki/Colombian_peso
+- https://en.wikipedia.org//wiki/Comorian_franc
+- https://en.wikipedia.org//wiki/Congolese_franc
+- https://en.wikipedia.org//wiki/New_Zealand_dollar
+- https://en.wikipedia.org//wiki/Cook_Islands_dollar
+- https://en.wikipedia.org//wiki/Costa_Rican_col%C3%B3n
+- https://en.wikipedia.org//wiki/Croatian_kuna
+- https://en.wikipedia.org//wiki/Cuban_convertible_peso
+- https://en.wikipedia.org//wiki/Cuban_peso
+- https://en.wikipedia.org//wiki/Netherlands_Antillean_guilder
+- https://en.wikipedia.org//wiki/Czech_koruna
+- https://en.wikipedia.org//wiki/Danish_krone
+- https://en.wikipedia.org//wiki/Djiboutian_franc
+- https://en.wikipedia.org//wiki/Dominican_peso
+- https://en.wikipedia.org//wiki/Egyptian_pound
+- https://en.wikipedia.org//wiki/Eritrean_nakfa
+- https://en.wikipedia.org//wiki/Ethiopian_birr
+- https://en.wikipedia.org//wiki/Falkland_Islands_pound
+- https://en.wikipedia.org//wiki/Faroese_kr%C3%B3na
+- https://en.wikipedia.org//wiki/Fijian_dollar
+- https://en.wikipedia.org//wiki/CFP_franc
+- https://en.wikipedia.org//wiki/Gambian_dalasi
+- https://en.wikipedia.org//wiki/Georgian_lari
+- https://en.wikipedia.org//wiki/Ghanaian_cedi
+- https://en.wikipedia.org//wiki/Gibraltar_pound
+- https://en.wikipedia.org//wiki/Guatemalan_quetzal
+- https://en.wikipedia.org//wiki/Guinean_franc
+- https://en.wikipedia.org//wiki/Guyanese_dollar
+- https://en.wikipedia.org//wiki/Haitian_gourde
+- https://en.wikipedia.org//wiki/Honduran_lempira
+- https://en.wikipedia.org//wiki/Hong_Kong_dollar
+- https://en.wikipedia.org//wiki/Hungarian_forint
+- https://en.wikipedia.org//wiki/Icelandic_kr%C3%B3na
+- https://en.wikipedia.org//wiki/Indonesian_rupiah
+- https://en.wikipedia.org//wiki/Iranian_rial
+- https://en.wikipedia.org//wiki/Iraqi_dinar
+- https://en.wikipedia.org//wiki/Manx_pound
+- https://en.wikipedia.org//wiki/Israeli_new_shekel
+- https://en.wikipedia.org//wiki/Jamaican_dollar
+- https://en.wikipedia.org//wiki/Japanese_yen
+- https://en.wikipedia.org//wiki/Jersey_pound
+- https://en.wikipedia.org//wiki/Jordanian_dinar
+- https://en.wikipedia.org//wiki/Kazakhstani_tenge
+- https://en.wikipedia.org//wiki/Kenyan_shilling
+- https://en.wikipedia.org//wiki/Kiribati_dollar
+- https://en.wikipedia.org//wiki/North_Korean_won
+- https://en.wikipedia.org//wiki/South_Korean_won
+- https://en.wikipedia.org//wiki/Kuwaiti_dinar
+- https://en.wikipedia.org//wiki/Kyrgyzstani_som
+- https://en.wikipedia.org//wiki/Lao_kip
+- https://en.wikipedia.org//wiki/Lebanese_pound
+- https://en.wikipedia.org//wiki/Lesotho_loti
+- https://en.wikipedia.org//wiki/South_African_rand
+- https://en.wikipedia.org//wiki/Liberian_dollar
+- https://en.wikipedia.org//wiki/Libyan_dinar
+- https://en.wikipedia.org//wiki/Swiss_franc
+- https://en.wikipedia.org//wiki/Macanese_pataca
+- https://en.wikipedia.org//wiki/Macedonian_denar
+- https://en.wikipedia.org//wiki/Malagasy_ariary
+- https://en.wikipedia.org//wiki/Malawian_kwacha
+- https://en.wikipedia.org//wiki/Malaysian_ringgit
+- https://en.wikipedia.org//wiki/Maldivian_rufiyaa
+- https://en.wikipedia.org//wiki/Mauritanian_ouguiya
+- https://en.wikipedia.org//wiki/Mauritian_rupee
+- https://en.wikipedia.org//wiki/Mexican_peso
+- https://en.wikipedia.org//wiki/Moldovan_leu
+- https://en.wikipedia.org//wiki/Mongolian_t%C3%B6gr%C3%B6g
+- https://en.wikipedia.org//wiki/Moroccan_dirham
+- https://en.wikipedia.org//wiki/Mozambican_metical
+- https://en.wikipedia.org//wiki/Burmese_kyat
+- https://en.wikipedia.org//wiki/Namibian_dollar
+- https://en.wikipedia.org//wiki/Nepalese_rupee
+- https://en.wikipedia.org//wiki/Nicaraguan_c%C3%B3rdoba
+- https://en.wikipedia.org//wiki/Nigerian_naira
+- https://en.wikipedia.org//wiki/Niue_dollar
+- https://en.wikipedia.org//wiki/Turkish_lira
+- https://en.wikipedia.org//wiki/Norwegian_krone
+- https://en.wikipedia.org//wiki/Omani_rial
+- https://en.wikipedia.org//wiki/Pakistani_rupee
+- https://en.wikipedia.org//wiki/Panamanian_balboa
+- https://en.wikipedia.org//wiki/Papua_New_Guinean_kina
+- https://en.wikipedia.org//wiki/Paraguayan_guaran%C3%AD
+- https://en.wikipedia.org//wiki/Peruvian_sol
+- https://en.wikipedia.org//wiki/Philippine_peso
+- https://en.wikipedia.org//wiki/Pitcairn_Islands_dollar
+- https://en.wikipedia.org//wiki/Polish_z%C5%82oty
+- https://en.wikipedia.org//wiki/Qatari_riyal
+- https://en.wikipedia.org//wiki/Romanian_leu
+- https://en.wikipedia.org//wiki/Rwandan_franc
+- https://en.wikipedia.org//wiki/Sahrawi_peseta
+- https://en.wikipedia.org//wiki/Samoan_t%C4%81l%C4%81
+- https://en.wikipedia.org//wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe_dobra
+- https://en.wikipedia.org//wiki/Saudi_riyal
+- https://en.wikipedia.org//wiki/Serbian_dinar
+- https://en.wikipedia.org//wiki/Seychellois_rupee
+- https://en.wikipedia.org//wiki/Sierra_Leonean_leone
+- https://en.wikipedia.org//wiki/Solomon_Islands_dollar
+- https://en.wikipedia.org//wiki/Somali_shilling
+- https://en.wikipedia.org//wiki/Somaliland_shilling
+- https://en.wikipedia.org//wiki/South_Sudanese_pound
+- https://en.wikipedia.org//wiki/Sri_Lankan_rupee
+- https://en.wikipedia.org//wiki/Sudanese_pound
+- https://en.wikipedia.org//wiki/Surinamese_dollar
+- https://en.wikipedia.org//wiki/Swazi_lilangeni
+- https://en.wikipedia.org//wiki/Swedish_krona
+- https://en.wikipedia.org//wiki/Syrian_pound
+- https://en.wikipedia.org//wiki/New_Taiwan_dollar
+- https://en.wikipedia.org//wiki/Tajikistani_somoni
+- https://en.wikipedia.org//wiki/Tanzanian_shilling
+- https://en.wikipedia.org//wiki/Thai_baht
+- https://en.wikipedia.org//wiki/Tongan_pa%CA%BBanga
+- https://en.wikipedia.org//wiki/Transnistrian_ruble
+- https://en.wikipedia.org//wiki/Trinidad_and_Tobago_dollar
+- https://en.wikipedia.org//wiki/Tunisian_dinar
+- https://en.wikipedia.org//wiki/Turkmenistan_manat
+- https://en.wikipedia.org//wiki/Tuvaluan_dollar
+- https://en.wikipedia.org//wiki/Ugandan_shilling
+- https://en.wikipedia.org//wiki/Ukrainian_hryvnia
+- https://en.wikipedia.org//wiki/United_Arab_Emirates_dirham
+- https://en.wikipedia.org//wiki/Uruguayan_peso
+- https://en.wikipedia.org//wiki/Uzbekistani_so%CA%BBm
+- https://en.wikipedia.org//wiki/Vanuatu_vatu
+- https://en.wikipedia.org//wiki/Venezuelan_bol%C3%ADvar
+- https://en.wikipedia.org//wiki/Vietnamese_%C4%91%E1%BB%93ng
+- https://en.wikipedia.org//wiki/Yemeni_rial
+- https://en.wikipedia.org//wiki/Zambian_kwacha
+</code></pre>
+</body>
+</html>
