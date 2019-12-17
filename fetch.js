@@ -64,8 +64,7 @@ function parseCurrencyPage(error, res, done) {
     var isInCoins = false;
     rows.each((i, element) => {
         var e = $(element);
-
-        const tdText = parseDenominations(e.find('td').text());
+        const tdText = parseDenominations(trimText(e.find('td').text()));
 
         var tableHeader = e.find('th');
         var t = $(tableHeader).text();
@@ -86,7 +85,9 @@ function parseCurrencyPage(error, res, done) {
             // If there also is a td in the row, it is directly used
             if(tdText != null && tdText != '') {
                 foundCurrencies[res.options.iso]['coins']['frequently'] = tdText;
-                if(debug) { console.log(`Found single Coins ${tdText}`); }
+                if(debug) { 
+                    console.log(`Found single Coins ${tdText}`); 
+                }
                 return;
             }
 
@@ -304,7 +305,7 @@ c.on('drain',function() {
     const prettyCurrencyJson = JSON.stringify(foundCurrencies, null, 2);
     fs.writeFile('./public/currencies.json', prettyCurrencyJson, 'utf8', () => { return; });
 
-    const currencyJson = JSON.stringify(foundCurrencies, null, 2);
+    const currencyJson = JSON.stringify(foundCurrencies);
     fs.writeFile('./public/currencies.min.json', currencyJson, 'utf8', () => { return; });    
 
     var urlsJson = JSON.stringify(urlsCrawled, null, 2);
